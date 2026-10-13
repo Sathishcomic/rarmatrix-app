@@ -1,0 +1,12 @@
+.model-diagram{
+  background:var(--white);border:1px solid #DCEBF3;border-radius:18px;padding:34px;
+  box-shadow:var(--shadow-md);position:relative;overflow:hidden;
+}
+.model-diagram::before{
+  content:'';position:absolute;top:-60px;right:-60px;width:180px;height:180px;border-radius:50%;
+  background:radial-gradient(circle, rgba(107,58,125,0.10), transparent 70%);
+}
+.flow-step{display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px dashed #E1E7ED;position:relative;}
+.flow-step:last-child{border-bottom:none;}
+.flow-dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--purple-accent));flex-shrink:0;box-shadow:0 0 0 4px rgba(11,92,117,0.08);}
+.flow-step span.label{font-size:14px;font-weight:600;color:var(--text);}

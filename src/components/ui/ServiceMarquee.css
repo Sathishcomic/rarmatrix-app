@@ -1,0 +1,8 @@
+.service-marquee{position:relative;overflow:hidden;padding:17px 0;background:#173B42;color:#fff;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);}
+.service-marquee-track{display:flex;width:max-content;animation:serviceTicker 38s linear infinite;}
+.service-marquee:hover .service-marquee-track{animation-play-state:paused;}
+.service-marquee-group{display:flex;align-items:center;flex-shrink:0;}
+.service-marquee-item{display:inline-flex;align-items:center;gap:28px;padding:0 22px;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;white-space:nowrap;color:#D7ECE7;}
+.service-marquee-item i{width:9px;height:9px;display:inline-block;background:#F0A35E;border-radius:2px;transform:rotate(45deg);}
+@keyframes serviceTicker{to{transform:translateX(-50%);}}
+@media(prefers-reduced-motion:reduce){.service-marquee-track{animation:none;}}

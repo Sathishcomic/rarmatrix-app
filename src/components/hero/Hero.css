@@ -14,10 +14,10 @@
 
 .hero-orb{position:absolute;border-radius:50%;filter:blur(64px);z-index:1;pointer-events:none;}
 .hero-orb-a{width:540px;height:540px;top:-200px;right:-140px;
-  background:radial-gradient(circle, rgba(122,58,237,0.35), transparent 68%);
+  background:radial-gradient(circle, rgba(230,110,82,0.32), transparent 68%);
   animation:floatOrb 13s ease-in-out infinite;}
 .hero-orb-b{width:400px;height:400px;bottom:-140px;left:-120px;
-  background:radial-gradient(circle, rgba(30,136,229,0.32), transparent 68%);
+  background:radial-gradient(circle, rgba(22,168,137,0.34), transparent 68%);
   animation:floatOrb 16s ease-in-out infinite reverse;}
 .hero-orb-c{width:280px;height:280px;top:40%;left:35%;
   background:radial-gradient(circle, rgba(26,198,210,0.15), transparent 70%);
@@ -27,7 +27,7 @@
   50%{transform:translate(26px,-20px) scale(1.05);}
 }
 .hero-seam{position:absolute;left:0;right:0;bottom:0;height:2px;z-index:3;
-  background:linear-gradient(90deg,#1e88e5 0%,#26c6da 30%,#7c3aed 70%,#ec407a 100%);
+  background:linear-gradient(90deg,#16a889 0%,#77d8c4 34%,#f0a35e 70%,#e66e52 100%);
   box-shadow:0 0 16px rgba(30,136,229,0.4);}
 
 .hero-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:48px;align-items:center;position:relative;z-index:2;}

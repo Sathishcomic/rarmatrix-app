@@ -9,6 +9,7 @@ import SocialSidebar from './components/layout/SocialSidebar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
+import ServiceDetail from './pages/ServiceDetail';
 import Solutions from './pages/Solutions';
 import Industries from './pages/Industries';
 import Projects from './pages/Projects';
@@ -41,6 +42,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/:serviceId" element={<ServiceDetail />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/projects" element={<Projects />} />

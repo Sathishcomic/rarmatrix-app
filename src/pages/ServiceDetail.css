@@ -1,0 +1,17 @@
+.service-detail-section{background:linear-gradient(135deg,#E5F3EF,#F6F0E6);}
+.service-detail-layout{display:grid;grid-template-columns:1fr 0.9fr;gap:64px;align-items:start;}
+.service-detail-intro h2{font-size:34px;line-height:1.2;margin-bottom:18px;max-width:590px;}
+.service-detail-intro p{max-width:590px;margin-bottom:20px;}
+.service-detail-offerings{padding:28px;background:#173B42;color:#fff;border-radius:8px;}
+.service-detail-offerings h3{font-size:21px;color:#fff;margin-bottom:18px;}
+.service-detail-offerings ul{display:grid;gap:12px;}
+.service-detail-offerings li{position:relative;padding-left:22px;color:#D5E9E2;font-size:14px;line-height:1.55;}
+.service-detail-offerings li::before{content:'';position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:50%;background:#F0A35E;}
+.service-detail-back{margin-top:36px;}
+.service-detail-missing{text-align:center;min-height:55vh;display:grid;place-items:center;}
+.service-detail-missing h1{margin-bottom:12px;}
+.service-detail-missing p{margin-bottom:24px;}
+@media(max-width:760px){
+  .service-detail-layout{grid-template-columns:1fr;gap:32px;}
+  .service-detail-intro h2{font-size:28px;}
+}

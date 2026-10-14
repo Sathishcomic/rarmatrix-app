@@ -16,9 +16,6 @@ export default function JourneyTimeline() {
           </div>
         ))}
       </div>
-      <p className="stats-note">
-        RARMATRIX TECHNOLOGIES PRIVATE LIMITED · CIN: U62090TN2025PTC181661 · ROC Chennai · Active
-      </p>
     </div>
   );
 }

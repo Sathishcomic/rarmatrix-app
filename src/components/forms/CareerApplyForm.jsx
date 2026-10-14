@@ -228,7 +228,7 @@ export default function CareerApplyForm({ selectedRole = '', onRoleChange }) {
           <input
             id="applicant-name"
             name="name"
-            placeholder="e.g. Vignesh Ramesh"
+            placeholder="Full name"
             value={form.name}
             onChange={handleChange}
             required
@@ -241,7 +241,7 @@ export default function CareerApplyForm({ selectedRole = '', onRoleChange }) {
             id="applicant-email"
             type="email"
             name="email"
-            placeholder="vignesh@example.com"
+            placeholder="Email address"
             value={form.email}
             onChange={handleChange}
             required
@@ -254,7 +254,7 @@ export default function CareerApplyForm({ selectedRole = '', onRoleChange }) {
             id="applicant-phone"
             type="tel"
             name="phone"
-            placeholder="+91 81489 20435"
+            placeholder="Phone number"
             value={form.phone}
             onChange={handleChange}
             required
@@ -266,7 +266,7 @@ export default function CareerApplyForm({ selectedRole = '', onRoleChange }) {
           <input
             id="applicant-city"
             name="city"
-            placeholder="e.g. Chennai, Tambaram, Coimbatore"
+            placeholder="City or region"
             value={form.city}
             onChange={handleChange}
             required
@@ -329,7 +329,7 @@ export default function CareerApplyForm({ selectedRole = '', onRoleChange }) {
           <input
             id="applicant-ctc"
             name="expectedCtc"
-            placeholder="e.g. ₹3.5 LPA or Negotiable"
+            placeholder="Expected compensation"
             value={form.expectedCtc}
             onChange={handleChange}
           />
@@ -340,7 +340,7 @@ export default function CareerApplyForm({ selectedRole = '', onRoleChange }) {
           <input
             id="applicant-linkedin"
             name="linkedinUrl"
-            placeholder="https://linkedin.com/in/username"
+            placeholder="LinkedIn or portfolio URL"
             value={form.linkedinUrl}
             onChange={handleChange}
           />
@@ -401,7 +401,7 @@ export default function CareerApplyForm({ selectedRole = '', onRoleChange }) {
 
           <input
             name="resumeLink"
-            placeholder="https://drive.google.com/file/d/.../view"
+            placeholder="Google Drive resume link"
             value={form.resumeLink}
             onChange={handleChange}
             className="resume-link-input"
@@ -413,7 +413,7 @@ export default function CareerApplyForm({ selectedRole = '', onRoleChange }) {
           <textarea
             id="applicant-notes"
             name="notes"
-            placeholder="e.g. CCNA certified, 2 years hands-on with Fortinet firewalls, active directory domain controller setup, M365 migration..."
+            placeholder="Describe relevant skills and experience"
             value={form.notes}
             onChange={handleChange}
             rows={3}

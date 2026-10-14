@@ -117,8 +117,7 @@ export default function ResourceRequestForm() {
       <div className="form-intro">
         <h3>Request Dedicated IT Professionals</h3>
         <p>
-          Specify your role requirements and deployment model. We match screened, certified
-          IT engineers ready for onsite or remote client onboarding.
+          Specify your role requirements and deployment model for onsite, remote or hybrid support.
         </p>
       </div>
 
@@ -128,7 +127,7 @@ export default function ResourceRequestForm() {
           <input
             id="res-company"
             name="company"
-            placeholder="e.g. Acme Enterprise Pvt Ltd"
+            placeholder="Company name"
             value={form.company}
             onChange={handleChange}
             required
@@ -140,7 +139,7 @@ export default function ResourceRequestForm() {
           <input
             id="res-contact"
             name="contact"
-            placeholder="e.g. Suresh Kumar (IT Manager)"
+            placeholder="Contact person"
             value={form.contact}
             onChange={handleChange}
             required
@@ -153,7 +152,7 @@ export default function ResourceRequestForm() {
             id="res-email"
             type="email"
             name="email"
-            placeholder="suresh@acme.com"
+            placeholder="Business email"
             value={form.email}
             onChange={handleChange}
             required
@@ -166,7 +165,7 @@ export default function ResourceRequestForm() {
             id="res-phone"
             type="tel"
             name="phone"
-            placeholder="+91 98765 43210"
+            placeholder="Phone number"
             value={form.phone}
             onChange={handleChange}
             required
@@ -178,7 +177,7 @@ export default function ResourceRequestForm() {
           <input
             id="res-jobRole"
             name="jobRole"
-            placeholder="e.g. L2 Desktop Engineer / Network Lead"
+            placeholder="Required role or skill set"
             value={form.jobRole}
             onChange={handleChange}
             required
@@ -190,7 +189,7 @@ export default function ResourceRequestForm() {
           <input
             id="res-resourceCount"
             name="resourceCount"
-            placeholder="e.g. 2"
+            placeholder="Number of resources"
             value={form.resourceCount}
             onChange={handleChange}
             required
@@ -202,7 +201,7 @@ export default function ResourceRequestForm() {
           <input
             id="res-skills"
             name="skills"
-            placeholder="e.g. CCNA, Fortinet, Windows Server 2022, Microsoft 365, Hardware break-fix"
+            placeholder="Required skills and technologies"
             value={form.skills}
             onChange={handleChange}
           />
@@ -228,7 +227,7 @@ export default function ResourceRequestForm() {
           <input
             id="res-location"
             name="location"
-            placeholder="e.g. Chennai (Tambaram / OMR / Guindy)"
+            placeholder="Deployment location"
             value={form.location}
             onChange={handleChange}
           />
@@ -269,7 +268,7 @@ export default function ResourceRequestForm() {
           <input
             id="res-duration"
             name="duration"
-            placeholder="e.g. 6 Months / Long-term"
+            placeholder="Expected engagement duration"
             value={form.duration}
             onChange={handleChange}
           />
@@ -280,7 +279,7 @@ export default function ResourceRequestForm() {
           <textarea
             id="res-additional"
             name="additional"
-            placeholder="Shift timings, specific client SLAs, background check criteria, or system environment..."
+            placeholder="Additional requirements or environment details"
             value={form.additional}
             onChange={handleChange}
           />

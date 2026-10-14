@@ -89,7 +89,7 @@ export default function ProjectRequestForm() {
           Our enterprise project architect at RARMATRIX will review your requirements and schedule a technical discovery call.
         </p>
         <p className="subtext">
-          Expected discovery call window: within 2 to 4 business hours.
+          Our team will review the project details and follow up to discuss next steps.
         </p>
 
         <div className="success-actions">
@@ -128,7 +128,7 @@ export default function ProjectRequestForm() {
       <div className="form-intro">
         <h3>Initiate a Technology Project</h3>
         <p>
-          From zero-downtime office IT rollouts to complex cloud migrations and structured LAN cabling,
+          From office IT deployments to cloud migrations and structured LAN cabling,
           RARMATRIX delivers milestone-driven technology execution.
         </p>
       </div>
@@ -139,7 +139,7 @@ export default function ProjectRequestForm() {
           <input
             id="proj-company"
             name="company"
-            placeholder="e.g. Nexus Global Technologies"
+            placeholder="Company or organization"
             value={form.company}
             onChange={handleChange}
             required
@@ -151,7 +151,7 @@ export default function ProjectRequestForm() {
           <input
             id="proj-contact"
             name="contact"
-            placeholder="e.g. Rajesh Narayanan (CTO / Head of IT)"
+            placeholder="Contact person"
             value={form.contact}
             onChange={handleChange}
             required
@@ -164,7 +164,7 @@ export default function ProjectRequestForm() {
             id="proj-email"
             type="email"
             name="email"
-            placeholder="rajesh@nexus.com"
+            placeholder="Business email"
             value={form.email}
             onChange={handleChange}
             required
@@ -177,7 +177,7 @@ export default function ProjectRequestForm() {
             id="proj-phone"
             type="tel"
             name="phone"
-            placeholder="+91 98401 23456"
+            placeholder="Phone number"
             value={form.phone}
             onChange={handleChange}
             required
@@ -206,7 +206,7 @@ export default function ProjectRequestForm() {
           <input
             id="proj-location"
             name="location"
-            placeholder="e.g. Chennai, Bangalore, or Multi-site"
+            placeholder="Deployment location"
             value={form.location}
             onChange={handleChange}
           />
@@ -217,7 +217,7 @@ export default function ProjectRequestForm() {
           <input
             id="proj-userCount"
             name="userCount"
-            placeholder="e.g. 50 Workstations, 2 Servers"
+            placeholder="Users or devices in scope"
             value={form.userCount}
             onChange={handleChange}
           />
@@ -243,7 +243,7 @@ export default function ProjectRequestForm() {
           <input
             id="proj-budget"
             name="budget"
-            placeholder="e.g. ₹2L - ₹5L or To be estimated"
+            placeholder="Estimated budget"
             value={form.budget}
             onChange={handleChange}
           />
@@ -254,7 +254,7 @@ export default function ProjectRequestForm() {
           <input
             id="proj-existingInfra"
             name="existingInfra"
-            placeholder="e.g. Cisco Catalyst 2960 switches, Dell PowerEdge servers, Microsoft 365 Business Standard"
+            placeholder="Current systems and platforms"
             value={form.existingInfra}
             onChange={handleChange}
           />
@@ -265,7 +265,7 @@ export default function ProjectRequestForm() {
           <textarea
             id="proj-scope"
             name="scope"
-            placeholder="Describe the key deliverables, site constraints, hardware requirements, or migration roadmap..."
+            placeholder="Project scope, requirements, and constraints"
             value={form.scope}
             onChange={handleChange}
             rows={3}

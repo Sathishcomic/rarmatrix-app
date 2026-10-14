@@ -5,6 +5,7 @@ import CTASection from '../components/ui/CTASection';
 import useReveal from '../hooks/useReveal';
 import { SERVICE_BANDS, DEPLOYMENT_PROCESS } from '../data/services';
 import { TECH_ECOSYSTEM } from '../data/content';
+import ServiceMarquee from '../components/ui/ServiceMarquee';
 
 export default function Services() {
   useReveal();
@@ -16,6 +17,8 @@ export default function Services() {
         title="Managed IT, infrastructure, cloud & more"
         desc="RARMATRIX delivers operational support and technical execution across your IT environment — not just staffing."
       />
+
+      <ServiceMarquee />
 
       <section>
         <div className="wrap">

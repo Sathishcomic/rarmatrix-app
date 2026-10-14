@@ -16,6 +16,7 @@ import '../components/ui/AboutStrip.css';
 
 import { SERVICE_BANDS, TECHNICAL_ROLES, DEPLOYMENT_PROCESS } from '../data/services';
 import { PROJECT_CATEGORIES, INDUSTRIES } from '../data/content';
+import ServiceMarquee from '../components/ui/ServiceMarquee';
 
 const PILLARS = [
   { num: '', title: 'IT Workforce Solutions', desc: 'Skilled technical professionals deployed according to your business requirements.' },
@@ -48,9 +49,9 @@ export default function Home() {
             <span className="eyebrow-dark">About RARMATRIX</span>
             <h2>Technology people.<br />Business solutions.</h2>
             <p className="lead-text">
-              RARMATRIX TECHNOLOGIES PRIVATE LIMITED (CIN: U62090TN2025PTC181661) is an active B2B technology partner
-              registered with ROC Chennai. We specialize in deploying screened IT professionals, managing enterprise infrastructure,
-              and delivering turnkey technology rollouts with 24/7 SLA governance.
+              RARMATRIX Technologies is a Chennai-based business technology partner for IT staffing, infrastructure support,
+              managed services and technology projects. We work with each organization to shape an engagement around its
+              environment, priorities and operating requirements.
             </p>
             <div className="focus-tags">
               {['Technical Workforce', 'Enterprise Infrastructure', 'Managed Cloud & IT', 'Turnkey Rollouts', 'SLA Support', 'Business Continuity'].map((t) => (
@@ -106,6 +107,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ServiceMarquee />
 
       {/* Projects */}
       <section className="section-light" id="projects-main">

@@ -77,25 +77,25 @@ export default function Careers() {
         desc="We recruit, screen, and deploy skilled technology professionals across infrastructure, cloud, security, and enterprise end-user computing."
       />
 
-      {/* Trust Metrics Bar */}
+      {/* Technical disciplines and engagement options */}
       <section className="section-career-metrics">
         <div className="wrap">
           <div className="career-metric-grid">
             <div className="metric-box reveal">
-              <span className="metric-number">150+</span>
-              <span className="metric-label">IT Engineers Deployed</span>
+              <span className="metric-number">Infrastructure</span>
+              <span className="metric-label">Network, server and endpoint roles</span>
             </div>
             <div className="metric-box reveal">
-              <span className="metric-number">96 Hrs</span>
-              <span className="metric-label">Rapid Client Placement Cycle</span>
+              <span className="metric-number">Cloud &amp; security</span>
+              <span className="metric-label">Cloud engineering and security roles</span>
             </div>
             <div className="metric-box reveal">
-              <span className="metric-number">24/7</span>
-              <span className="metric-label">Helpdesk &amp; Technical Support</span>
+              <span className="metric-number">End-user IT</span>
+              <span className="metric-label">Desktop and technical support roles</span>
             </div>
             <div className="metric-box reveal">
-              <span className="metric-number">West Tambaram</span>
-              <span className="metric-label">HQ &amp; Training Labs (Chennai 600045)</span>
+              <span className="metric-number">Flexible delivery</span>
+              <span className="metric-label">Onsite, remote and project engagements</span>
             </div>
           </div>
         </div>

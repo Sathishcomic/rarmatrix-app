@@ -89,7 +89,7 @@ export default function ContactForm() {
         <h3>Enquiry Submitted Successfully</h3>
         <p>
           Thank you, <strong>{form.name}</strong>. Our enterprise IT consulting team at RARMATRIX Technologies
-          has logged your requirement and will contact you within 2 business hours.
+          has received your requirement and will follow up using the contact details you provided.
         </p>
 
         <div className="success-actions">
@@ -139,7 +139,7 @@ export default function ContactForm() {
           <input
             id="name"
             name="name"
-            placeholder="e.g. Ramesh Kumar"
+            placeholder="Your name"
             value={form.name}
             onChange={handleChange}
             required
@@ -151,7 +151,7 @@ export default function ContactForm() {
           <input
             id="company"
             name="company"
-            placeholder="e.g. TechCorp Solutions"
+            placeholder="Company or organization"
             value={form.company}
             onChange={handleChange}
             required
@@ -164,7 +164,7 @@ export default function ContactForm() {
             id="email"
             type="email"
             name="email"
-            placeholder="name@company.com"
+            placeholder="Business email"
             value={form.email}
             onChange={handleChange}
             required
@@ -177,7 +177,7 @@ export default function ContactForm() {
             id="phone"
             type="tel"
             name="phone"
-            placeholder="+91 98765 43210"
+            placeholder="Phone number"
             value={form.phone}
             onChange={handleChange}
             required
@@ -189,7 +189,7 @@ export default function ContactForm() {
           <input
             id="city"
             name="city"
-            placeholder="e.g. Chennai, Bangalore, Hyderabad"
+            placeholder="City or region"
             value={form.city}
             onChange={handleChange}
           />
@@ -200,7 +200,7 @@ export default function ContactForm() {
           <input
             id="industry"
             name="industry"
-            placeholder="e.g. Manufacturing, IT/ITES, BFSI, Healthcare"
+            placeholder="Industry sector"
             value={form.industry}
             onChange={handleChange}
           />
@@ -229,7 +229,7 @@ export default function ContactForm() {
           <input
             id="resourceCount"
             name="resourceCount"
-            placeholder="e.g. 2 Desktop Engineers, 1 Network Lead"
+            placeholder="Roles or project scope"
             value={form.resourceCount}
             onChange={handleChange}
           />
@@ -240,7 +240,7 @@ export default function ContactForm() {
           <input
             id="skill"
             name="skill"
-            placeholder="e.g. Cisco CCNA, Azure, Fortinet, Windows Server"
+            placeholder="Relevant skills or technologies"
             value={form.skill}
             onChange={handleChange}
           />
@@ -277,7 +277,7 @@ export default function ContactForm() {
           <input
             id="projectRequirement"
             name="projectRequirement"
-            placeholder="e.g. Setting up 50 workstations, migrating mailboxes to Microsoft 365, or 24/7 helpdesk"
+            placeholder="Describe your IT requirement"
             value={form.projectRequirement}
             onChange={handleChange}
           />
@@ -288,7 +288,7 @@ export default function ContactForm() {
           <textarea
             id="message"
             name="message"
-            placeholder="Please share any specific requirements, existing IT challenges, or SLA expectations..."
+            placeholder="Additional requirements or context"
             value={form.message}
             onChange={handleChange}
           />

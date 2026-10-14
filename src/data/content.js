@@ -8,7 +8,6 @@ export const PROJECT_CATEGORIES = [
   { title: 'Support Projects', items: ['Managed support rollout', 'Helpdesk setup', 'SLA-based operations'] },
   { title: 'Technology Rollouts', items: ['Multi-location deployment', 'Standardized configs', 'Phased go-live'] },
 ];
-
 export const PROJECT_DELIVERY_PROCESS = [
   { title: 'Discover', desc: 'Understand requirements.' },
   { title: 'Design', desc: 'Create technical architecture.' },
@@ -17,13 +16,6 @@ export const PROJECT_DELIVERY_PROCESS = [
   { title: 'Test', desc: 'Validate functionality.' },
   { title: 'Handover', desc: 'Documentation and knowledge transfer.' },
   { title: 'Support', desc: 'Post-deployment support.' },
-];
-
-export const STATS = [
-  { count: 500, suffix: '+', label: 'Projects Delivered' },
-  { count: 300, suffix: '+', label: 'Happy Clients' },
-  { count: 150, suffix: '+', label: 'IT Professionals Deployed' },
-  { count: 24, suffix: '/7', label: 'Support Availability' },
 ];
 
 export const INDUSTRIES = [
@@ -61,14 +53,9 @@ export const JOURNEY = [
     desc: 'Approved Form INC-20A with official headquarters established in West Tambaram, Chennai to deploy enterprise IT solutions.',
   },
   {
-    year: 'Late 2025',
+    year: 'Our focus',
     title: 'IT Workforce & Managed Support',
-    desc: 'Deployed 150+ screened technical resources across networking, desktop support, servers, and multi-tier helpdesks.',
-  },
-  {
-    year: '2026+',
-    title: 'Cloud, AMC & End-to-End Projects',
-    desc: 'Full-spectrum IT provider delivering enterprise cloud migrations, SLA-backed AMC contracts, and dedicated engineering teams.',
+    desc: 'Technical staffing, infrastructure support, cloud services and project delivery for business environments.',
   },
 ];
 
@@ -91,17 +78,3 @@ export const RESOURCE_ARTICLES = [
   { category: 'Cybersecurity', title: 'Cybersecurity Basics for Businesses' },
 ];
 
-export const CASE_STUDIES = [
-  {
-    title: 'Enterprise IT Resource Deployment',
-    requirement: 'Urgent deployment of 12 Level-2 Desktop & Network Engineers for a multi-facility manufacturing client in Chennai.',
-    solution: 'RARMATRIX screened, background-verified, and placed qualified engineers within 96 hours with ongoing operational governance.',
-    outcome: '99.8% first-response SLA adherence and 35% reduction in ticket escalation times.',
-  },
-  {
-    title: 'Corporate Office Infrastructure & Network Setup',
-    requirement: 'Greenfield IT setup for a 120-seat corporate headquarters including high-speed LAN, firewall, Wi-Fi 6, and M365 deployment.',
-    solution: 'Engineered structured Cat6A cabling, Fortinet firewall gateway, Cisco switches, and automated user onboarding.',
-    outcome: 'Delivered 3 days ahead of schedule with zero business day-one downtime.',
-  },
-];

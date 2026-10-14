@@ -2,13 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RARMATRIX Technologies Pvt Ltd | IT Staffing & Infrastructure Services</title>
     <meta name="description" content="RARMATRIX Technologies provides skilled IT professionals, IT infrastructure services, managed IT support, cloud, cybersecurity, AMC and technology project solutions for businesses." />
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      const githubPagesRoute = new URLSearchParams(window.location.search).get('p');
+      if (githubPagesRoute) {
+        const basePath = window.location.pathname;
+        window.history.replaceState(null, '', basePath + githubPagesRoute.replace(/^\/+/, ''));
+      }
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

@@ -15,7 +15,7 @@ export default function About() {
       <PageHero
         eyebrow="About RARMATRIX"
         title="Technology people. Business solutions."
-        desc={`${COMPANY_INFO.legalName} is a licensed B2B technology partner supplying skilled IT professionals, enterprise infrastructure solutions, and 24/7 managed IT services.`}
+        desc={`${COMPANY_INFO.legalName} supports business technology needs with IT professionals, infrastructure services, managed support and project delivery.`}
       />
 
       {/* Corporate Overview & MCA Registration Section */}
@@ -140,7 +140,7 @@ export default function About() {
             <p className="lead-text">
               {COMPANY_INFO.legalName} is focused on helping organizations meet their technology
               workforce, infrastructure, and IT service requirements. Our capabilities combine vetted technical
-              professionals, infrastructure engineering, turnkey project execution, and 24/7 SLA-backed IT support.
+              professionals, infrastructure engineering, technology project execution, and managed IT support.
             </p>
             <div className="focus-tags">
               {['Technical Workforce', 'IT Infrastructure', 'Cloud & Cybersecurity', 'Turnkey Projects', 'SLA Support', 'Business Continuity'].map((t) => (

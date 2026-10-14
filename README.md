@@ -51,45 +51,28 @@ Almost all text content lives in `src/data/*.js` — edit those files rather tha
 digging through component JSX for routine copy changes (service descriptions,
 industries list, career roles, resource articles, etc).
 
-**Placeholders to replace before launch:**
-- `src/data/content.js` → `STATS` (currently sample numbers: 500+ projects, 300+ clients, etc.)
-- `src/data/content.js` → `JOURNEY` (currently `[Year]` placeholders)
-- `src/data/content.js` → `CASE_STUDIES` (marked "Case Study Coming Soon" until real ones exist)
-- `src/components/layout/Footer.jsx` → company address, phone, email
-- `src/components/layout/SocialSidebar.jsx` → WhatsApp number, Instagram/LinkedIn URLs
-- `src/components/hero/Hero.jsx` → background video URLs (currently stock placeholders)
+Service descriptions, role categories, industries and company details are maintained in
+`src/data/`. Per-service detail pages are generated from `src/data/services.js`.
 
 ## Forms — backend integration
 
-All three forms (`ContactForm`, `ResourceRequestForm`, `ProjectRequestForm`) are fully
-functional controlled components that currently simulate a submission. Each has a
-`// TODO` comment marking exactly where to add a real `fetch()` call once a backend
-endpoint exists, e.g.:
-
-```js
-await fetch('/api/enquiries', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(form),
-});
-```
-
-This matches the backend-ready architecture called for in the brief (Node.js/Express,
-REST API, PostgreSQL/MySQL) — the frontend is already structured to plug into it.
+The contact, careers, resource and project forms submit through
+`src/services/sheetsService.js` to the configured Google Apps Script web app. Set
+`VITE_GOOGLE_SHEET_URL` at build time to override the repository default endpoint.
+The service also retains a small local browser backup of submissions.
 
 ## Deployment
 
 Since this is a client-side single-page app, direct navigation to a route like
 `/about` needs a server rewrite to `index.html`. Ready-made configs are included:
 - `public/_redirects` — Netlify
+- `public/404.html` — GitHub Pages client-side route fallback
 - `vercel.json` — Vercel
 
 For other hosts (nginx, Apache, S3+CloudFront), add an equivalent SPA fallback rule.
 
 ## Notes
 
-- The hero background video is hotlinked from Pixabay (royalty-free, no attribution
-  required). If it's ever blocked by network policy, it fails silently and the
-  particle canvas + gradient still render correctly.
+- The hero uses a particle canvas and wireframe animation.
 - The "3D mesh" spheres in the hero are drawn with real rotation matrices + perspective
   projection on `<canvas>` (see `WireSphere.jsx`) — not a CSS transform illusion.

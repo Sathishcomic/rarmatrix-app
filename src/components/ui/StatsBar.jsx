@@ -1,52 +1,30 @@
-import { useEffect, useRef, useState } from 'react';
-import { STATS } from '../../data/content';
 import './StatsBar.css';
 
-function CountUp({ target, suffix }) {
-  const ref = useRef(null);
-  const [value, setValue] = useState(0);
+const CAPABILITIES = [
+  { title: 'IT talent', label: 'Dedicated · onsite · remote' },
+  { title: 'Managed support', label: 'User · endpoint · infrastructure' },
+  { title: 'Technology projects', label: 'Plan · deploy · hand over' },
+  { title: 'Cloud & security', label: 'Assessment · implementation · support' },
+];
 
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          const duration = 1400;
-          const start = performance.now();
-          function tick(now) {
-            const progress = Math.min((now - start) / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            setValue(Math.floor(eased * target));
-            if (progress < 1) requestAnimationFrame(tick);
-            else setValue(target);
-          }
-          requestAnimationFrame(tick);
-          io.unobserve(el);
-        });
-      },
-      { threshold: 0.4 }
-    );
-    io.observe(el);
-    return () => io.disconnect();
-  }, [target]);
-
-  return <div ref={ref} className="stat-num">{value}{suffix}</div>;
-}
+const DELIVERY_STAGES = [
+  { title: 'Discover', label: 'Requirements and current environment' },
+  { title: 'Plan', label: 'Scope, resources and delivery approach' },
+  { title: 'Deploy', label: 'Implementation and validation' },
+  { title: 'Support', label: 'Handover and ongoing assistance' },
+];
 
 export default function StatsBar({ variant = 'trust' }) {
+  const items = variant === 'trust' ? CAPABILITIES : DELIVERY_STAGES;
+
   return (
-    <>
-      <div className={variant === 'trust' ? 'trust-strip reveal' : 'stats-strip reveal'}>
-        {STATS.map((s) => (
-          <div key={s.label} className={variant === 'trust' ? 'trust-block' : 'stat-block'}>
-            <CountUp target={s.count} suffix={s.suffix} />
-            <div className={variant === 'trust' ? 'trust-label' : 'stat-label'}>{s.label}</div>
-          </div>
-        ))}
-      </div>
-      <p className="stats-note">Sample figures shown for demonstration — replace with your verified numbers before launch.</p>
-    </>
+    <div className={variant === 'trust' ? 'trust-strip reveal' : 'stats-strip reveal'}>
+      {items.map((item) => (
+        <div key={item.title} className={variant === 'trust' ? 'trust-block' : 'stat-block'}>
+          <div className="stat-num">{item.title}</div>
+          <div className={variant === 'trust' ? 'trust-label' : 'stat-label'}>{item.label}</div>
+        </div>
+      ))}
+    </div>
   );
 }

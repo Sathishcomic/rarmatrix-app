@@ -6,7 +6,7 @@ import { COMPANY_INFO } from '../data/company';
 
 const OPTIONS = [
   { title: 'Need IT Professionals?', cta: 'Request IT Resource', to: '/request-resource' },
-  { title: 'Need 24/7 Managed IT Support?', cta: 'Talk to Support Team', to: '#contact-form' },
+  { title: 'Need Managed IT Support?', cta: 'Talk to Support Team', to: '#contact-form' },
   { title: 'Need Network & Infrastructure?', cta: 'Request Consultation', to: '#contact-form' },
   { title: 'Need Comprehensive AMC?', cta: 'Request AMC Proposal', to: '#contact-form' },
   { title: 'Need a Turnkey IT Project?', cta: 'Discuss Your Project', to: '/start-project' },

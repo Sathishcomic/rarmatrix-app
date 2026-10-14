@@ -3,24 +3,24 @@
 
 :root {
   /* Primary colors */
-  --navy: #252642;
-  --navy-dark: #191A35;
-  --blue: #6385E8;
-  --blue-light: #93B4FF;
-  --teal: #45BFB0;
-  --cyan: #73D6E8;
-  --purple: #8B5CF6;
-  --purple-accent: #A78BFA;
-  --pink: #EC8DB5;
+  --navy: #173B42;
+  --navy-dark: #102D34;
+  --blue: #087E8B;
+  --blue-light: #74C9C0;
+  --teal: #16A889;
+  --cyan: #77D8C4;
+  --purple: #E66E52;
+  --purple-accent: #F0A35E;
+  --pink: #E98F78;
 
   /* Background colors */
-  --bg-light: #F8FAFF;
+  --bg-light: #EAF5F2;
   --white: #FFFFFF;
 
   /* Text colors */
-  --text: #252642;
-  --text-secondary: #53617D;
-  --text-tertiary: #7C849B;
+  --text: #173B42;
+  --text-secondary: #506B6D;
+  --text-tertiary: #718787;
 
   /* Status and accent colors */
   --success: #16A36A;
@@ -32,13 +32,13 @@
   --shadow-lg: 0 20px 48px rgba(37, 38, 66, 0.14);
 
   /* Additional Aurora colors */
-  --gradient-primary: linear-gradient(135deg, #6385E8 0%, #8B5CF6 100%);
-  --gradient-accent: linear-gradient(135deg, #93B4FF 0%, #E9D5FF 50%, #FFE0EC 100%);
-  --gradient-surface: linear-gradient(145deg, #FFFFFF 0%, #F4F0FF 100%);
+  --gradient-primary: linear-gradient(135deg, #087E8B 0%, #16A889 100%);
+  --gradient-accent: linear-gradient(135deg, #74C9C0 0%, #F0A35E 100%);
+  --gradient-surface: linear-gradient(145deg, #F4FBF8 0%, #E1F2EC 100%);
 
   /* Borders */
-  --border: #E4E7F2;
-  --border-focus: #8B5CF6;
+  --border: #D2E5DF;
+  --border-focus: #087E8B;
 }
 
 * {
@@ -56,19 +56,10 @@ body {
   color: var(--text);
 
   background:
-    radial-gradient(ellipse at 10% 10%,
-      rgba(147, 197, 253, 0.50),
-      transparent 40%),
-    radial-gradient(ellipse at 90% 15%,
-      rgba(216, 180, 254, 0.48),
-      transparent 38%),
-    radial-gradient(ellipse at 70% 90%,
-      rgba(251, 207, 232, 0.45),
-      transparent 42%),
-    linear-gradient(135deg,
-      #F8FAFF 0%,
-      #F4F0FF 50%,
-      #FDF2F8 100%);
+    radial-gradient(ellipse at 8% 12%, rgba(119, 216, 196, 0.28), transparent 38%),
+    radial-gradient(ellipse at 92% 24%, rgba(240, 163, 94, 0.19), transparent 35%),
+    radial-gradient(ellipse at 72% 88%, rgba(116, 201, 192, 0.22), transparent 42%),
+    linear-gradient(135deg, #F0F8F5 0%, #E6F2EF 52%, #F8F1E8 100%);
 
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
@@ -283,8 +274,8 @@ section {
 }
 
 .section-light {
-  background: linear-gradient(180deg, #f9fbfd 0%, #f0f4f9 100%);
-  background-image: radial-gradient(rgba(30, 136, 229, 0.06) 1px, transparent 1px), linear-gradient(180deg, #f9fbfd, #f5f2fa);
+  background: linear-gradient(135deg, #E4F3EE 0%, #F1F6EC 52%, #F8EADF 100%);
+  background-image: radial-gradient(rgba(8, 126, 139, 0.08) 1px, transparent 1px), linear-gradient(135deg, #E4F3EE, #F1F6EC 52%, #F8EADF);
   background-size: 24px 24px, auto;
 }
 

@@ -46,15 +46,6 @@ export default function Hero() {
             <Link to="/services" className="btn btn-hero-outline">
               Explore Services
             </Link>
-            <a
-              href={COMPANY_INFO.contact.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-hero-wa"
-              title="Chat on WhatsApp"
-            >
-              <span>💬</span> WhatsApp: {COMPANY_INFO.contact.whatsapp}
-            </a>
           </div>
 
           <div className="service-line">

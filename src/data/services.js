@@ -5,6 +5,8 @@ export const SERVICE_BANDS = [
     desc: 'Technical resources and operational support to help organizations maintain day-to-day IT operations.',
     tags: ['Desktop Support', 'Remote/Onsite', 'Monitoring', 'M365'],
     cta: 'Request IT Service',
+    overview: 'Keep everyday technology dependable with structured support for users, endpoints and common business IT operations.',
+    deliverables: ['End-user and desktop support', 'Endpoint setup and troubleshooting', 'Microsoft 365 user support', 'Remote or onsite support coordination'],
   },
   {
     id: 'infrastructure',
@@ -12,6 +14,8 @@ export const SERVICE_BANDS = [
     desc: 'Network, server, endpoint and data center support — from deployment to preventive maintenance.',
     tags: ['Network', 'Servers', 'Data Center', 'Endpoints'],
     cta: 'Request IT-Infra Proposal',
+    overview: 'Plan, deploy and maintain the core systems that connect users, devices and business applications.',
+    deliverables: ['Network and Wi-Fi deployment', 'Server and endpoint configuration', 'Infrastructure health checks', 'Technical documentation and handover'],
   },
   {
     id: 'cloud-security',
@@ -19,6 +23,8 @@ export const SERVICE_BANDS = [
     desc: 'Cloud solutions designed around your business requirements, backed by layered security practices.',
     tags: ['AWS', 'Azure', 'Endpoint Security', 'MFA'],
     cta: 'Request Cybersecurity Review',
+    overview: 'Improve cloud and security operations through practical assessment, implementation and support aligned to your environment.',
+    deliverables: ['Cloud environment setup and migration planning', 'Identity and access configuration', 'Endpoint protection coordination', 'Security and configuration reviews'],
   },
   {
     id: 'amc',
@@ -26,6 +32,8 @@ export const SERVICE_BANDS = [
     desc: 'Desktop, server, network and printer maintenance with scheduled health checks and vendor coordination.',
     tags: ['Preventive', 'Onsite', 'Remote'],
     cta: 'Request AMC Proposal',
+    overview: 'Set a clear maintenance rhythm for business technology, with an agreed scope for preventive checks and issue coordination.',
+    deliverables: ['Asset and environment review', 'Scheduled preventive maintenance', 'Issue logging and service coordination', 'Vendor and warranty follow-up'],
   },
   {
     id: 'projects',
@@ -33,6 +41,8 @@ export const SERVICE_BANDS = [
     desc: 'Office IT setup, network deployment, cloud migration and multi-location technology rollouts.',
     tags: ['Office Setup', 'Migration', 'Rollouts'],
     cta: 'Request IT Project',
+    overview: 'Move technology initiatives from requirements to deployment through planned, documented implementation work.',
+    deliverables: ['Office and workplace IT setup', 'Network and endpoint rollouts', 'Cloud migration support', 'Testing, documentation and handover'],
   },
   {
     id: 'procurement',
@@ -40,6 +50,8 @@ export const SERVICE_BANDS = [
     desc: 'Laptops, servers, networking equipment and software licenses, with vendor and warranty coordination.',
     tags: ['Hardware', 'Licenses', 'Asset Tagging'],
     cta: 'Request Procurement Support',
+    overview: 'Coordinate technology purchasing around compatibility, business requirements and the planned deployment environment.',
+    deliverables: ['Hardware and software requirement review', 'Product and vendor coordination', 'License and warranty tracking', 'Asset tagging and deployment planning'],
   },
 ];
 

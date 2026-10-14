@@ -60,7 +60,7 @@ export default function ParticleField({ className = '' }) {
       }
       for (const p of particles) {
         ctx.beginPath();
-        ctx.fillStyle = 'rgba(180,225,240,0.85)';
+        ctx.fillStyle = 'rgba(237, 253, 7, 0.85)';
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fill();
       }

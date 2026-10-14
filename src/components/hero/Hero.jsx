@@ -24,11 +24,6 @@ export default function Hero() {
 
       <div className="wrap hero-grid">
         <div>
-          <div className="hero-trust-tag">
-            <span className="live-dot" />
-            <span>RARMATRIX TECHNOLOGIES PVT LTD · CIN: {COMPANY_INFO.cin} · ROC CHENNAI</span>
-          </div>
-
           <div className="eyebrow">
             <span className="eyebrow-dot" />
             IT STAFFING · INFRASTRUCTURE · MANAGED SERVICES · CLOUD PROJECTS
@@ -74,17 +69,17 @@ export default function Hero() {
 
         <div className="network-wrap" aria-hidden="true">
           <WireSphere
-            nodes={38}
+            nodes={45}
             radius={170}
-            neighbors={6}
-            speed={0.0025}
+            neighbors={10}
+            speed={0.0090}
             tiltX={0.25}
             wobble={0.035}
-            wobbleSpeed={0.7}
+            wobbleSpeed={0.900}
             color={[25, 151, 202]}
             focal={650}
             nodeRadius={6}
-            glow={18}
+            glow={25}
             lineWidth={1.4}
             lineOpacity={0.55}
           />
